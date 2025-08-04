@@ -12,6 +12,17 @@ module.exports = {
   devtool: "eval-source-map",
   devServer: {
     watchFiles: ["./src/template.html"],
+    client: {
+      overlay: true,
+    },
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/template.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+    }),
+  ],
+  watchOptions: {
+    poll: 1000, // Check for changes every second
+    ignored: ["**/node_modules"],
+  },
 };
