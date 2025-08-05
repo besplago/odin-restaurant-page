@@ -373,7 +373,7 @@ footer {
 
 .founder-image {
   flex: 1;
-  height: 400px;
+  aspect-ratio: 3 / 4;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url("./images/akira-sato.png");
   background-size: cover;
