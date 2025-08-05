@@ -243,3 +243,370 @@ footer {
     margin: 0 auto;
   }
 }
+
+/* ===== MENU SECTION ===== */
+.menu {
+  padding: 120px 10%;
+  background: #0f0f0f;
+}
+
+.menu-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.menu-header h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.menu-subtitle {
+  font-size: 1.2rem;
+  color: #c0b18b;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-subtitle::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #c0b18b;
+  margin: 15px auto 0;
+}
+
+.menu-category {
+  margin-bottom: 3.5rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #c0b18b;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.item-name {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.item-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #c0b18b;
+  font-weight: 300;
+}
+
+.item-dots {
+  border-bottom: 1px dashed rgba(192, 177, 139, 0.3);
+  margin: 0.5rem 0;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.pairing-note {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(80, 80, 80, 0.3);
+  font-style: italic;
+  color: #888;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 120px 10%;
+  background: #0a0a0a;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.founder-story {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.founder-image {
+  flex: 1;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("./images/akira-sato.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(192, 177, 139, 0.2);
+}
+
+.founder-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.founder-text p {
+  margin-bottom: 1.5rem;
+}
+
+.philosophy,
+.sustainability {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border: 1px solid rgba(80, 80, 80, 0.2);
+  background: rgba(15, 15, 15, 0.5);
+}
+
+.philosophy h3,
+.sustainability h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  color: #c0b18b;
+  text-transform: uppercase;
+}
+
+.philosophy p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 120px 10%;
+  background: #0f0f0f;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contact-header p {
+  color: #c0b18b;
+  letter-spacing: 1.5px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.requirements {
+  flex: 1;
+}
+
+.requirements h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  color: #c0b18b;
+  text-transform: uppercase;
+}
+
+.requirements ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.requirements ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.requirements ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #c0b18b;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+  border-top: 1px solid rgba(80, 80, 80, 0.3);
+  padding-top: 1rem;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.form-container h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  color: #c0b18b;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(192, 177, 139, 0.3);
+  padding: 12px 15px;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: transparent;
+  color: #c0b18b;
+  border: 1px solid #c0b18b;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: rgba(192, 177, 139, 0.1);
+  letter-spacing: 3px;
+}
+
+.location {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(80, 80, 80, 0.3);
+}
+
+.location h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  color: #c0b18b;
+  text-transform: uppercase;
+}
+
+.location p {
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 1024px) {
+  .founder-story {
+    flex-direction: column;
+  }
+
+  .founder-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .menu,
+  .about,
+  .contact,
+  .exclusivity {
+    padding: 80px 5%;
+  }
+
+  .restaurant-name {
+    font-size: 3.5rem;
+  }
+
+  .menu-header h2,
+  .about h2,
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurant-name {
+    font-size: 2.5rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .item-price {
+    position: static;
+    margin-bottom: 0.5rem;
+  }
+}
