@@ -136,7 +136,7 @@ nav ul li:hover:after {
   font-weight: 400;
 }
 
-.reservation-btn {
+.menu-btn {
   background: transparent;
   color: #c0b18b;
   border: 1px solid #c0b18b;
@@ -150,7 +150,7 @@ nav ul li:hover:after {
   overflow: hidden;
 }
 
-.reservation-btn:hover {
+.menu-btn:hover {
   background: rgba(192, 177, 139, 0.1);
   letter-spacing: 3px;
 }
