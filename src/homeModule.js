@@ -12,7 +12,7 @@ export function generateHomeContent() {
           off-world colonies, creating dishes that transcend ordinary dining
           and approach art.
         </p>
-        <button class="reservation-btn">Reserve Your Table</button>
+        <button class="menu-btn">View Our Menu</button>
       </div>
     </section>
 
