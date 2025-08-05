@@ -25,4 +25,12 @@ module.exports = {
     poll: 1000, // Check for changes every second
     ignored: ["**/node_modules"],
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
