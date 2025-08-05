@@ -1,3 +1,5 @@
 import "./styles.css";
+import { generateHomeContent } from "./homeModule.js";
 
-console.log("Hello World!");
+const contentDiv = document.getElementById("content");
+contentDiv.innerHTML = generateHomeContent();
