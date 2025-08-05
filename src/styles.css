@@ -1,3 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rebeccapurple;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav ul li:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #c0b18b;
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover:after {
+  width: 100%;
+}
+
+#content {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("./images/nexus-prime-interior.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.restaurant-name {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+  color: #c0b18b;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.tagline::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #c0b18b;
+  margin: 15px auto 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  color: #c0b18b;
+  font-weight: 400;
+}
+
+.reservation-btn {
+  background: transparent;
+  color: #c0b18b;
+  border: 1px solid #c0b18b;
+  padding: 14px 42px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reservation-btn:hover {
+  background: rgba(192, 177, 139, 0.1);
+  letter-spacing: 3px;
+}
+
+.exclusivity {
+  padding: 120px 10%;
+  text-align: center;
+  background: #0f0f0f;
+}
+
+.exclusivity-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exclusivity h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.exclusivity p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #c0b18b;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.vertical-line {
+  width: 1px;
+  background: rgba(80, 80, 80, 0.5);
+}
+
+footer {
+  padding: 40px 5%;
+  text-align: center;
+  border-top: 1px solid rgba(80, 80, 80, 0.2);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .restaurant-name {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vertical-line {
+    height: 1px;
+    width: 100px;
+    margin: 0 auto;
+  }
 }
