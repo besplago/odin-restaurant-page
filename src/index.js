@@ -1,5 +1,5 @@
 import "./styles.css";
-import { generateHomeContent } from "./homeModule.js";
+import { generateHomeContent } from "./modules/homeModule.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const contentDiv = document.getElementById("content");
