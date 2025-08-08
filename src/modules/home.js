@@ -5,7 +5,7 @@ export function generateHomeContent() {
         <h1 class="restaurant-name">Nexus Prime</h1>
         <div class="tagline">Elevated Dining Experience</div>
         <p class="description">
-          Perched 300 meters above Neo-Tokyo's sprawling metropolis,
+          Perched 350 meters above Neo-Tokyo's sprawling metropolis,
           <span class="highlight">Nexus Prime</span> offers an unparalleled
           culinary journey for the discerning elite. Our augmented chefs craft
           molecular gastronomy using exclusively sourced ingredients from
